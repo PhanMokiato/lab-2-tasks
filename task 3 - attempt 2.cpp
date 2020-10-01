@@ -24,7 +24,7 @@ int main() {
     } else {
         srand(time(nullptr));
         for (i = 0; i < n; ++i) {
-            array[i] = rand() % 12,56 - 8 ;
+            array[i] = rand() % 12 - 8.43 ;
             cout << array[i] << " ";
         }
 
