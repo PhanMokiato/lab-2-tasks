@@ -22,9 +22,12 @@ int main() {
             cin >> array[i];
         }
     } else {
-        srand(time(nullptr));
+        cout << "Where do you want your numbers? Write your boundaries, please:" << endl;
+        double start; int finish;
+        cin >> start >> finish; cout << endl;
+        srand(time(NULL));
         for (i = 0; i < n; ++i) {
-            array[i] = rand() % 12 - 8.43 ;
+            array[i] = rand() % finish + start - finish;
             cout << array[i] << " ";
         }
 
